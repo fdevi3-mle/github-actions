@@ -12,7 +12,4 @@ jobs:
       - name: echo a bad command and fail
         run: echo "Hi"
       - name: multiline script
-        run: |
-          python3 -V
-          touch my_file_with_workflow.py
-          ls -l
+        run: ls -a
