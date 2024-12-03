@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello world"
+      - name: echo a bad command and fail
+        run: echcco "Hi"
       - name: multiline script
         run: |
           python3 -V
